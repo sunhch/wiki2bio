@@ -88,8 +88,8 @@ def train(sess, dataloader, model):
     current_epoch = 0
     loss, start_time = 0.0, time.time()
     for _ in range(FLAGS.epoch):
-	current_epoch += 1
-	print("New epoch! Current epoch = " + str(current_epoch))
+        current_epoch += 1
+        print("New epoch! Current epoch = " + str(current_epoch))
         for x in dataloader.batch_iter(trainset, FLAGS.batch_size, True):
             loss += model(x, sess)
             k += 1
@@ -98,7 +98,7 @@ def train(sess, dataloader, model):
                 cost_time = time.time() - start_time
                 write_log("%d : loss = %.3f, time = %.3f , Current epoch = %d" % (k // FLAGS.report, loss, cost_time, current_epoch))
                 loss, start_time = 0.0, time.time()
-		if k // FLAGS.report >= 1: 
+                if k // FLAGS.report >= 1: 
                     ksave_dir = save_model(model, save_dir, k // FLAGS.report)
                     write_log(evaluate(sess, dataloader, model, ksave_dir, 'valid'))
                     
