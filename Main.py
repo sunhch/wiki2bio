@@ -27,7 +27,7 @@ tf.app.flags.DEFINE_integer("field_vocab", 1480,'vocabulary size')
 tf.app.flags.DEFINE_integer("position_vocab", 31,'vocabulary size')
 tf.app.flags.DEFINE_integer("target_vocab", 20003,'vocabulary size')
 tf.app.flags.DEFINE_integer("report", 5000,'report valid results after some steps')
-tf.app.flags.DEFINE_float("learning_rate", 0.0003,'learning rate')
+tf.app.flags.DEFINE_float("learning_rate", 0.0005,'learning rate')
 
 tf.app.flags.DEFINE_string("mode",'train','train or test')
 tf.app.flags.DEFINE_string("load",'0','load directory') # BBBBBESTOFAll
@@ -38,8 +38,8 @@ tf.app.flags.DEFINE_integer("limits", 0,'max data set size')
 tf.app.flags.DEFINE_boolean("dual_attention", True,'dual attention layer or normal attention')
 tf.app.flags.DEFINE_boolean("fgate_encoder", True,'add field gate in encoder lstm')
 
-tf.app.flags.DEFINE_boolean("field", True,'concat field information to word embedding')
-tf.app.flags.DEFINE_boolean("position", True,'concat position information to word embedding')
+tf.app.flags.DEFINE_boolean("field", False,'concat field information to word embedding')
+tf.app.flags.DEFINE_boolean("position", False,'concat position information to word embedding')
 tf.app.flags.DEFINE_boolean("encoder_pos", True,'position information in field-gated encoder')
 tf.app.flags.DEFINE_boolean("decoder_pos", True,'position information in dual attention decoder')
 
