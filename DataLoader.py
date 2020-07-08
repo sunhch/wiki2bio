@@ -45,6 +45,14 @@ class DataLoader(object):
             rposes = rposes[:self.limits]
         print summaries[0].strip().split(' ')
         summaries = [list(map(int, summary.strip().split(' '))) for summary in summaries]
+        # summaries = list()
+        # cnt = 0
+        # for summary in summaries:
+             # print(cnt)
+             # cnt += 1
+             # summaries.append(map(int, summary.strip().split(' ')))
+        # summaries = [list(map(int, summary.strip().split(' '))) for summary in summaries]
+
         texts = [list(map(int, text.strip().split(' '))) for text in texts]
         fields = [list(map(int, field.strip().split(' '))) for field in fields]
         poses = [list(map(int, pos.strip().split(' '))) for pos in poses]

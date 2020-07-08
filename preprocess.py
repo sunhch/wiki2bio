@@ -19,6 +19,7 @@ def split_infobox():
     boxes = ["original_data/train.box", "original_data/valid.box", "original_data/test.box"]
     
     mixb_word, mixb_label, mixb_pos = [], [], []
+    # cnt = 0
     for fboxes in boxes:
         box = open(fboxes, "r").read().strip().split('\n')
         box_word, box_label, box_pos = [], [], []
@@ -29,6 +30,12 @@ def split_infobox():
                 if len(it.split(':')) > 2:
                     continue
                 # print it
+                # print(prefix)
+                # print(word)
+                # print it
+                # print(cnt)
+                # cnt += 1
+                # print("---------")
                 prefix, word = it.split(':')
                 if '<none>' in word or word.strip()=='' or prefix.strip()=='':
                     continue
