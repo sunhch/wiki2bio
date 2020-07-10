@@ -21,16 +21,16 @@ tf.app.flags.DEFINE_integer("emb_size", 400, "Size of embedding.")
 tf.app.flags.DEFINE_integer("field_size", 50, "Size of embedding.")
 tf.app.flags.DEFINE_integer("pos_size", 5, "Size of embedding.")
 tf.app.flags.DEFINE_integer("batch_size", 32, "Batch size of train set.")
-tf.app.flags.DEFINE_integer("epoch", 100, "Number of training epoch.")
+tf.app.flags.DEFINE_integer("epoch", 200, "Number of training epoch.")
 tf.app.flags.DEFINE_integer("source_vocab", 30000,'vocabulary size')
 tf.app.flags.DEFINE_integer("field_vocab", 1480,'vocabulary size')
-tf.app.flags.DEFINE_integer("position_vocab", 40,'vocabulary size')
+tf.app.flags.DEFINE_integer("position_vocab", 50,'vocabulary size')
 tf.app.flags.DEFINE_integer("target_vocab", 30000,'vocabulary size')
 tf.app.flags.DEFINE_integer("report", 5000,'report valid results after some steps')
 tf.app.flags.DEFINE_float("learning_rate", 0.0003,'learning rate')
 
 tf.app.flags.DEFINE_string("mode",'test','train or test')
-tf.app.flags.DEFINE_string("load",'1594189998192','load directory') # BBBBBESTOFAll
+tf.app.flags.DEFINE_string("load",'1594244744104','load directory') # BBBBBESTOFAll
 tf.app.flags.DEFINE_string("dir",'processed_data','data set directory')
 tf.app.flags.DEFINE_integer("limits", 0,'max data set size')
 
