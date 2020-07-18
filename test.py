@@ -27,10 +27,10 @@ tf.app.flags.DEFINE_integer("field_vocab", 1480,'vocabulary size')
 tf.app.flags.DEFINE_integer("position_vocab", 60,'vocabulary size')
 tf.app.flags.DEFINE_integer("target_vocab", 30000,'vocabulary size')
 tf.app.flags.DEFINE_integer("report", 5000,'report valid results after some steps')
-tf.app.flags.DEFINE_float("learning_rate", 0.0003,'learning rate')
+tf.app.flags.DEFINE_float("learning_rate", 0.0001,'learning rate')
 
 tf.app.flags.DEFINE_string("mode",'test','train or test')
-tf.app.flags.DEFINE_string("load",'1594511428576','load directory') # BBBBBESTOFAll
+tf.app.flags.DEFINE_string("load",'1594884006772','load directory') # BBBBBESTOFAll
 tf.app.flags.DEFINE_string("dir",'processed_data','data set directory')
 tf.app.flags.DEFINE_integer("limits", 0,'max data set size')
 
