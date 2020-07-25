@@ -30,7 +30,7 @@ tf.app.flags.DEFINE_integer("report", 5000,'report valid results after some step
 tf.app.flags.DEFINE_float("learning_rate", 0.0001,'learning rate')
 
 tf.app.flags.DEFINE_string("mode",'test','train or test')
-tf.app.flags.DEFINE_string("load",'1594884006772','load directory') # BBBBBESTOFAll
+tf.app.flags.DEFINE_string("load",'1595377632125','load directory') # BBBBBESTOFAll
 tf.app.flags.DEFINE_string("dir",'processed_data','data set directory')
 tf.app.flags.DEFINE_integer("limits", 0,'max data set size')
 
